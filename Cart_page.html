@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cart.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="row align-center justify-between">
+            <div class="col logo">
+                <div class="wrapper align-center">
+                    <picture>
+                        <img src="images/Logo.svg" alt="">
+                    </picture>
+                </div>
+            </div>
+            <div class="col search w-50">
+                <div class="wrapper">
+                    <form action="#" method="get">
+                        <label>
+                            <input type="text" placeholder="Search...">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="col menu">
+                <div class="wrapper align-center">
+                    <nav>
+                        <ul class="flex gap-30">
+                            <li>
+                                <a href="Home_page.html">
+                                    <i class="fa-solid fa-house-chimney"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Products_page.html">
+                                    <i class="fa-solid fa-dice-d6"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Cart_page.html">
+                                    <i class="fa-solid fa-cart-arrow-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Register.html">
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Login.html">
+                                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="hero-cart mb-0">
+            <div class="row justify-center">
+                <div class="col">
+                    <div class="wrapper">
+                        <h2> Cart</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-start">
+                <div class="col w-70">
+                    <div class="wrapper flex flex-col gap-20">
+                        <div class="cart-product flex gap-30" id="p-38">
+                            <div class="image-1 w-20">
+                                <picture>
+                                    <img src="images/electronics2.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="info-1 w-20">
+                                <div>Laptop Lenovo</div>
+                                <div class="desc">
+                                    description
+                                </div>
+                                <div class="delivery">
+                                    in 10 days
+                                </div>
+                            </div>
+                            <div class="count flex gap-20 w-10  align-center">
+                                <span class="qty-btn minus" data-step="-1">-</span>
+                                <span class="value">2</span>
+                                <span class="qty-btn plus" data-step="1">+</span>
+                            </div>
+                            <div class="price flex w-30 gap-10 align-center">
+                                <div class="new-price title-3">420 000֏</div>
+                                <del class="old-price">510 000֏</del>
+                                 <button class="btn remove-product trash" data-id="p-38">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart-product flex gap-30" id="p-6">
+                            <div class="image-1 w-20">
+                                <picture>
+                                    <img src="images/clothes4.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="info-1 w-20">
+                                <div>Shoes</div>
+                                <div class="desc">
+                                    description
+                                </div>
+                                <div class="delivery">
+                                    in 10 days
+                                </div>
+                            </div>
+                            <div class="count flex gap-20 w-10 align-center">
+                                <span class="qty-btn minus" data-step="-1">-</span>
+                                <span class="value">2</span>
+                                <span class="qty-btn plus" data-step="1">+</span>
+                            </div>
+                            <div class="price flex w-30 gap-10 align-center">
+                                <div class="new-price title-3">25 000֏</div>
+                                <del class="old-price">40 000֏</del>
+                                 <button class="btn remove-product trash" data-id="p-6">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart-product flex gap-30" id="p-22">
+                            <div class="image-1 w-20">
+                                <picture>
+                                    <img src="images/foods4.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="info-1 w-20">
+                                <div>Pasta</div>
+                                <div class="desc">
+                                    description
+                                </div>
+                                <div class="delivery">
+                                    in 10 days
+                                </div>
+                            </div>
+                            <div class="count flex gap-20 w-10  align-center">
+                                <span class="qty-btn minus" data-step="-1">-</span>
+                                <span class="value">2</span>
+                                <span class="qty-btn plus" data-step="1">+</span>
+                            </div>
+                            <div class="price flex w-30 gap-10 align-center">
+                                <div class="new-price title-3">3 500֏</div>
+                                <del class="old-price">5 000֏</del>
+                                 <button class="btn remove-product trash" data-id="p-22">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart-product flex gap-30" id="p-5">
+                            <div class="image-1 w-20">
+                                <picture>
+                                    <img src="images/electronics6.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="info-1 w-20">
+                                <div> SAMSUNG TAB S11 Tablet</div>
+                                <div class="desc">
+                                    description
+                                </div>
+                                <div class="delivery">
+                                    in 10 days
+                                </div>
+                            </div>
+                            <div class="count flex gap-20 w-10 align-center">
+                                <span class="qty-btn minus" data-step="-1">-</span>
+                                <span class="value">2</span>
+                                <span class="qty-btn plus" data-step="1">+</span>
+                            </div>
+                            <div class="price flex w-30 gap-10 align-center">
+                                <div class="new-price title-3">200 000֏</div>
+                                <del class="old-price">260 000֏</del>
+                                 <button class="btn remove-product trash" data-id="p-5">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart-product flex gap-30" id="p-18">
+                            <div class="image-1 w-20">
+                                <picture>
+                                    <img src="images/clothes5.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="info-1 w-20">
+                                <div> Costume for Man</div>
+                                <div class="desc">
+                                    description
+                                </div>
+                                <div class="delivery">
+                                    in 10 days
+                                </div>
+                            </div>
+                            <div class="count flex gap-20 w-10 align-center">
+                                <span class="qty-btn minus" data-step="-1">-</span>
+                                <span class="value">2</span>
+                                <span class="qty-btn plus" data-step="1">+</span>
+                            </div>
+                            <div class="price flex w-30 gap-10 align-center">
+                                <div class="new-price title-3">35 000֏</div>
+                                <del class="old-price">50 000֏</del>
+                                <button class="btn remove-product trash" data-id="p-18">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col w-30 order">
+                    <div class="wrapper bg-secondary1 flex flex-col align-content-between gap-10">
+                        <div class="flex gap-20 justify-between">
+                            <span>Goods5ps</span>
+                            <span>683 500֏</span>
+                        </div>
+                        <div class="flex gap-20 justify-between">
+                            <span>Discount</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="flex gap-20 justify-between">
+                            <span>Delivery</span>
+                            <span>2 000֏</span>
+                        </div>
+                        <div class="flex gap-20 justify-between">
+                            <span>Total</span>
+                            <span>342 750֏</span>
+                        </div>
+                        <a href="#" class="btn w-100">
+                            Order
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="row ">
+            <div class="col">
+                <div class="wrapper gap-30 flex flex-wrap">
+                    <div class="footer-header align-center w-100 flex gap-50 justify-between">
+                        <picture class="w-25">
+                            <img src="images/Logo.svg" alt="">
+                        </picture>
+                        <div class="search w-50">
+                            <form action="#" method="get">
+                                <label>
+                                    <input type="text" placeholder="Search...">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="menu w-25">
+                            <nav>
+                                <ul class="flex gap-30">
+                                    <li>
+                                        <a href="Home_page.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="Products_page.html">
+                                            Products
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="Register.html">Register</a>
+                                    </li>
+                                    <li>
+                                        <a href="Login.html">Login</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer-main flex w-100 gap-50">
+                        <div class="w-50 contact gap-10">
+                            <div class="flex flex-col gap-20">
+                                <div>Contacts</div>
+                                <p>
+                                    <i class="fa-solid fa-phone"></i>
+                                    +374-588-921-933
+                                </p>
+                                <p>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    shopping.service@gmail.com
+                                </p>
+                                <p>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    harutunyan str.12/5
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-50">
+                            <div class="flex gap-20">
+                                <div class="flex flex-col gap-10">
+                                    <p>Enter your email and send your questions</p>
+                                    <input type="email" name="email" placeholder="name.surname@exemple.com">
+                                </div>
+                                <div class="flex flex-col gap-10">
+                                    <p>Subscribe on our page</p>
+
+                                    <a href="#" class="btn">
+                                        Subscribe
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="footer-footer flex gap-40">
+                        <div>© 2023 Positivus. All Rights Reserved.</div>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>

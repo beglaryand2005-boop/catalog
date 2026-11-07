@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="Home_page">
+    <header>
+        <div class="row align-center  justify-between">
+            <div class="col logo">
+                <div class="wrapper align-center ">
+                    <picture>
+                        <img src="images/Logo.svg" alt="">
+                    </picture>
+                </div>
+            </div>
+            <div class="col search w-50">
+                <div class="wrapper">
+                    <form action="#" method="get">
+                        <label>
+                            <input type="text" placeholder="Search...">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="col menu">
+                <div class="wrapper align-center">
+                    <nav>
+                        <ul class="flex gap-30">
+                            <li>
+                                <a href="Home_page.html">
+                                    <i class="fa-solid fa-house-chimney"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Products_page.html">
+                                    <i class="fa-solid fa-dice-d6"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Cart_page.html">
+                                    <i class="fa-solid fa-cart-arrow-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Register.html">
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Login.html">
+                                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="products mb-0">
+            <div class="row justify-center bg-dark">
+                <div class="col">
+                    <div class="wrapper">
+                        <h2>Products</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row filter justify-between">
+                <div class="col">
+                    <div class="wrapper">
+                        <h2>Category</h2>
+                        <select name="categories" class="categories-list">
+                            <option value="_" selected disabled>Not selected</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="wrapper">
+                        <h2>Price</h2>
+                        <div class="price-min">Minimum</div>
+                        <div class="price-max">Maximum</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="wrapper">
+                        <h2>View</h2>
+                        <div class="grid">Card</div>
+                        <div class="grid">3x3</div>
+                        <div class="grid">4x4</div>
+                        <div class="grid">5x5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-row row  products justify-center flex-wrap">
+                <div class="col w-33">
+                    <div class="wrapper carding">
+                        <div class="image">
+                            <picture>
+                                <img src="images/clothes7.jpeg" alt="">
+                            </picture>
+                            <!-- <div class="overley">
+                                <div class="cart">
+                                    <picture>
+                                        <img src="images/Cart-icon.png" alt="">
+                                    </picture>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="info">
+                            <div class="categories">
+                                Cowboys boots
+                            </div>
+                            <div class="flex gap-10">
+                                <strong>25 000֏</strong>
+                                <del>40 000֏</del>
+                            </div>
+                            <a href="Cart_page.html" class="btn text-center">
+                                Buy now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col w-33">
+                    <div class="wrapper carding">
+                        <div class="image">
+                            <picture>
+                                <img src="images/electronics7.jpg" alt="">
+                            </picture>
+                            <!-- <div class="overley">
+                                <div class="cart">
+                                    <picture>
+                                        <img src="images/Cart-icon.png" alt="">
+                                    </picture>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="info">
+                            <div class="categories">
+                                SAMSUNG TV
+                            </div>
+                            <div class="flex gap-10">
+                                <strong>200 000֏</strong>
+                                <del>300 000֏</del>
+                            </div>
+                            <a href="Cart_page.html" class="btn text-center">
+                                Buy now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col w-33">
+                    <div class="wrapper carding">
+                        <div class="image">
+                            <picture>
+                                <img src="images/foods7.jpg" alt="">
+                            </picture>
+                            <!-- <div class="overley">
+                                <div class="cart">
+                                    <picture>
+                                        <img src="images/Cart-icon.png" alt="">
+                                    </picture>
+                                </div> -->
+                        </div>
+                        <div class="info">
+                            <div class="categories">
+                                Delicious juicy steak
+                            </div>
+                            <div class="flex gap-10">
+                                <strong>5 000֏</strong>
+                                <del>10 000֏</del>
+                            </div>
+                            <a href="Cart_page.html" class="btn text-center">
+                                Buy now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col w-33">
+                    <!-- <p class="loading">Loading...</p> -->
+                    <div class="wrapper carding">
+                        <div class="image">
+                            <div class="product-slide">
+                                <picture>
+                                    <img src="images/foods7.jpg" alt="" referrerpolicy="no-referrer">
+                                </picture>
+                            </div>
+                            <div class="wishlist-btn">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3></h3>
+                            <p></p>
+                            <div class="flex gap-10 align-center">
+                                <strong>5 000֏</strong>
+                                <del>10 000֏</del>
+                            </div>
+                            <div class="flex justify-between gap-20">
+                                <button class="btn text-center add-to-cart" data-id="">
+                                    Add to Cart
+                                </button>
+                                <a href="Products_page.html" class="btn text-center">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-center">
+                <div class="col">
+                    <div class="wrapper">
+                        <button class="btn bg-dark show-more">
+                            See more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="location mb-0">
+            <div class="row ">
+                <div class="col">
+                    <div class="wrapper "></div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+    <footer>
+        <div class="row ">
+            <div class="col">
+                <div class="wrapper gap-30 flex flex-wrap">
+                    <div class="footer-header align-center w-100 flex gap-50 justify-between">
+                        <picture>
+                            <img src="images/Logo.svg" alt="">
+                        </picture>
+                        <div class="search w-50">
+                            <form action="#" method="get">
+                                <label>
+                                    <input type="text" placeholder="Search...">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="menu">
+                            <nav>
+                                <ul class="flex gap-30">
+                                    <li>
+                                        <a href="Home_page.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="Cart_page.html">Cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="Register.html">Register</a>
+                                    </li>
+                                    <li>
+                                        <a href="Login.html">Login</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer-main flex w-100 gap-50">
+                        <div class="w-50 contact gap-10">
+                            <div class="flex flex-col gap-20">
+                                <div>Contacts</div>
+                                <p>
+                                    <i class="fa-solid fa-phone"></i>
+                                    +374-588-921-933
+                                </p>
+                                <p>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    shopping.service@gmail.com
+                                </p>
+                                <p>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    harutunyan str.12/5
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-50">
+                            <div class="flex gap-20">
+                                <div class="flex flex-col gap-10">
+                                    <p>Enter your email and send your questions</p>
+                                    <input type="email" name="email" placeholder="name.surname@exemple.com">
+                                </div>
+                                <div class="flex flex-col gap-10">
+                                    <p>Subscribe on our page</p>
+                                    <a href="#" class="btn">
+                                        Subscribe
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="footer-footer flex gap-40">
+                        <div>© 2023 Positivus. All Rights Reserved.</div>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script src="js/products.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+</body>
+
+</html>

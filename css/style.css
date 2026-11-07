@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+:root {
+  --text-3: #9ea3bc;
+  --text-secondary: #b9ff66;
+  --text-color1: #22da1b;
+  --text-color: #d6802a;
+  --bg-secondary: #26ec8c;
+  --bg-light: #b2e927b3;
+  --bg-dark: #cf6c2ac0;
+  --text-bg-btn: black;
+  --text-btn-dark: white;
+  --required-text: #cb2660;
+  --btn-hover-bg: #e1912f;
+  --a-light: #171b2e;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+.row {
+  padding: 0 40px;
+}
+
+.col {
+  padding: 20px;
+}
+
+.info:hover {
+  background-color: rgb(222, 208, 24);
+  overflow: hidden;
+  border-radius: 0 0 30px 30px;
+  transform: scale(1.1);
+}
+
+.image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 30px 30px 0 0;
+}
+
+.image-1 {
+  overflow: hidden;
+  border-radius: 30px
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 777;
+  backdrop-filter: blur(3px);
+
+}
+
+.search label {
+  display: flex;
+  background-color: #e0e1dd;
+  padding: 5px 15px;
+  align-items: center;
+  border-radius: 6px;
+  color: black;
+  justify-content: space-between;
+}
+
+.search input {
+  width: 100%;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+}
+
+a i {
+  font-size: 40px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+a img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1,
+.title-1 {
+  font-size: 60px;
+  font-weight: 500px;
+}
+
+h2,
+.title-2 {
+  font-size: 40px;
+  font-weight: 500px;
+}
+
+h3,
+.title-3 {
+  font-size: 20px;
+  font-weight: 500px;
+}
+
+.info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 1.2s;
+}
+
+.price * {
+  white-space: nowrap;
+}
+
+.info-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form {
+  padding: 10px 30px;
+}
+
+.categories {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 400px;
+}
+
+.image {
+  position: relative;
+}
+
+.image .overley {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-color: #93992380;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+
+.image:hover .overley {
+  display: block;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #312e2e;
+}
+
+.cart {
+  width: 80px;
+}
+
+.products h3 {
+  line-height: 20px;
+  height: 20px;
+  overflow: hidden;
+  mask-image: linear-gradient(45deg, black, transparent);
+}
+
+.products p {
+  font-size: 12px;
+  color: var(--text-3);
+  height: 2.4em;
+  overflow: hidden;
+}
+
+main {
+  background-size: cover;
+  background-image: url(../images/halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg);
+  background-repeat: no-repeat;
+}
+
+h4,
+.title-4 {
+  font-size: 60px;
+  font-weight: 500px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+/* main section */
+
+#hero,
+#products,
+#hero-cart,
+#hero-home {
+  padding: 150px 25px 0px 25px;
+}
+
+.text-2 {
+  font-size: 20px;
+}
+
+.required {
+  text-decoration: dotted;
+  color: #cb2660;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login {
+  border-bottom: 1px solid #2b2a2fa7;
+  padding: 15px 20px;
+  align-items: center;
+}
+
+.plus,
+.minus {
+  cursor: pointer;
+}
+
+p a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.order {
+  position: sticky;
+  top: 77px;
+}
+
+.wishlist-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  background-color: var(--text-btn-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon i {
+  color: #1c90c6;
+  font-size: 50px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  bottom: 1px solid #191a23;
+  padding: 15px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(.16, .47, 1, 1);
+  white-space: nowrap;
+}
+
+.border {
+  border: 2px solid #2b2a2fa7;
+}
+
+.product-slide {
+  display: flex;
+}
+
+.btn:hover {
+  background-color: #e1912f;
+  border-color: #e1912f;
+  color: var(--text-btn-dark);
+}
+
+.cart-product {
+  background-color: rgb(212, 187, 103);
+  border-radius: 30px 0 0 30px;
+}
+
+.carding {
+  background-color: tan;
+  border-radius: 30px;
+}
+
+.section-img {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo9d3rGe0HvdhAd0EwJRRK3weJ_7jQQlHrrQ3nWRHSFWyu5qhyo_nw0X4&s);
+  width: 100%;
+  background-size: cover;
+}
+
+#foods .row:nth-child(1) {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzLAZ2srvHptbvTcai1AebdHolCEShar31NlqzlBTYhIdgT8uPruas6Po&s);
+  width: 100%;
+  background-size: cover;
+}
+
+#electronics .row:nth-child(1) {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZwG4kD75oYO8kylQ0WVWLM3ap8lcn7iBhVXB2fJ7JkqQ-3oB7-zCcNn8&s);
+  width: 100%;
+  background-size: cover;
+}
+
+.trash {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.dark-btn {
+  background-color: #4a32a0;
+  color: var(--text-btn-dark);
+}
+
+.dark-btn:hover {
+  background-color: var(--text-btn-dark);
+  color: var(--text-bg-btn);
+}
+
+.bg-dark {
+  background-color: var(--bg-dark);
+  color: var(--text-bg-btn);
+}
+
+.bg-light {
+  background-color: var(--bg-light);
+  color: var(--text-bg-btn);
+  border-radius: 0 0 30px 30px;
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary);
+  color: var(--text-bg-btn);
+}
+
+.bg-secondary1 {
+  background-color: #827a0c;
+  border-radius: 0 0 30px 30px;
+}
+
+.text-color1 {
+  color: var(--text-color1);
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+/* footer */
+
+footer {
+  background-color: #e0b31cd3;
+  color: black;
+  width: 100%;
+  padding: 20px;
+}
+
+footer .footer-header img {
+  height: 60px;
+}
+
+button:disabled {
+  background-color: gray;
+  color: rgb(54, 54, 54);
+  cursor: no-drop;
+}
+
+button:disabled:hover {
+  background-color: gray;
+  color: rgb(54, 54, 54);
+  cursor: no-drop;
+}
+
+@media all and (max-width="600px") {
+  .row {
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+
+  .col {
+    width: 100%;
+    padding: 5px;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  header {
+    display: none;
+  }
+
+  h1,
+  .title-1 {
+    font-size: 43px;
+    font-weight: 500px;
+  }
+
+  h2,
+  .title-2 {
+    font-size: 36px;
+    font-weight: 500px;
+  }
+
+  h3,
+  .title-3 {
+    font-size: 26px;
+    font-weight: 500px;
+  }
+
+  h4,
+  .title-4 {
+    font-size: 18px;
+    font-weight: 500px;
+  }
+
+  .text-2 {
+    font-size: 16px;
+  }
+}
